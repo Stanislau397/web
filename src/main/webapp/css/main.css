@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("city.jpg");
+    background-size: cover;
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 20px;
+    height: auto;
+}
+.nav-area li a:hover{
+    background: wheat;
+    color: #333;
+}

@@ -1,0 +1,15 @@
+18:07:36.369 [main] WARN  edu.epam.web.validator.AccountValidator - Invalid userName Data
+18:08:02.687 [main] WARN  edu.epam.web.validator.AccountValidator - Invalid password Data
+18:17:31.463 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
+18:19:45.068 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
+18:21:15.649 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
+18:22:07.766 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
+18:22:42.155 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
+18:23:33.743 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
+18:24:14.002 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
+18:34:09.403 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
+18:34:12.411 [main] ERROR epam.web.dao.impl.UserDaoImpl - Duplicate entry 'Lancer397' for key 'users.username_UNIQUE'
+18:34:12.411 [main] ERROR epam.web.service.impl.UserServiceImpl - null
+18:34:53.847 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
+18:34:56.593 [main] ERROR epam.web.dao.impl.UserDaoImpl - Duplicate entry 'Lancer397@gmail.com' for key 'users.email_UNIQUE'
+18:34:56.593 [main] ERROR epam.web.service.impl.UserServiceImpl - null
