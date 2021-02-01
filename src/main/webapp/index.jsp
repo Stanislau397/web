@@ -19,7 +19,6 @@
             </select>
         </form>
         <ul class="nav-area">
-            <li><a href="jsp/upload_file.jsp"><fmt:message key="label.file"/></a></li>
             <li><a href="index.jsp"><fmt:message key="text.label.main"/></a></li>
             <li><a href="jsp/register_page.jsp"><fmt:message key="login.label.register"/></a></li>
             <li><a href="jsp/login_page.jsp"><fmt:message key="login.label.login"/></a></li>
