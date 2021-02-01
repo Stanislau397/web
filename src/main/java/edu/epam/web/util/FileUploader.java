@@ -17,7 +17,7 @@ public class FileUploader {
     public static final Logger logger = LogManager.getLogger(FileUploader.class);
     public static final String FILE_PATH = "file";
 
-    public boolean uploadFile(HttpServletRequest request) throws Exception{
+    public boolean uploadFile(HttpServletRequest request) throws Exception {
         ServletFileUpload sfu = new ServletFileUpload(new DiskFileItemFactory());
         List<FileItem> multipleFiles;
         boolean isUploaded = false;

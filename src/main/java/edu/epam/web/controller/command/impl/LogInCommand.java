@@ -17,8 +17,8 @@ public class LogInCommand implements Command<HttpServletRequest> {
         String logInPassword = request.getParameter(RequestParameter.LOGIN_PASSWORD);
 
         if (service.findByUserNameAndPassword(logInName, logInPassword)) {
-            request.setAttribute(RequestParameter.USER_NAME_PARAM, logInName);
-            request.setAttribute(RequestParameter.PASSWORD_PARAM, logInPassword);
+            request.setAttribute(RequestParameter.USER_NAME_PARAMETER, logInName);
+            request.setAttribute(RequestParameter.PASSWORD_PARAMETER, logInPassword);
             path = PagePath.LOGIN_SUCCESS;
         }
         return path;

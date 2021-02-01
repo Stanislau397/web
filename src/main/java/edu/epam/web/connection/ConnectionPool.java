@@ -29,7 +29,7 @@ public enum ConnectionPool {
     ConnectionPool() {
         freeConnections = new LinkedBlockingDeque<>(DEFAULT_POOL_SIZE);
         givenAwayConnections = new ArrayDeque<>();
-        ClassLoader classLoader = this.getClass().getClassLoader();
+        ClassLoader classLoader = getClass().getClassLoader();
         Properties properties = new Properties();
 
         try {

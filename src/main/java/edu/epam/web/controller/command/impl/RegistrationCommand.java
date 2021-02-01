@@ -11,23 +11,28 @@ import javax.servlet.http.HttpServletRequest;
 
 public class RegistrationCommand implements Command<HttpServletRequest> {
 
+    private static final String MESSAGE = "The letter was sent to your mail";
+    private static final String SUBJECT = "WELCOME";
+    private static final String BODY = "Your account has been created";
+
     @Override
     public String execute(HttpServletRequest request) {
         String path = null;
         UserServiceImpl service = new UserServiceImpl();
+        MailSender mailSender = new MailSender();
         String accountName = request.getParameter(RequestParameter.USER_NAME);
         String accountPassword = request.getParameter(RequestParameter.USER_PASSWORD);
         String accountEmail = request.getParameter(RequestParameter.USER_EMAIL);
-                User user = new User();
+        User user = new User();
         user.setName(accountName);
         user.setEmail(accountEmail);
 
         if (service.insert(user, accountPassword)) {
-            String message = "Account created";
-            request.setAttribute(RequestParameter.MESSAGE_PARAM, message);
-            request.setAttribute(RequestParameter.USER_NAME_PARAM, accountName);
-            request.setAttribute(RequestParameter.EMAIL_PARAM, accountEmail);
-            path =  PagePath.REGISTER_SUCCESS;
+            mailSender.sendEmail(accountEmail, SUBJECT, BODY);
+            request.setAttribute(RequestParameter.MESSAGE_PARAMETER, MESSAGE);
+            request.setAttribute(RequestParameter.USER_NAME_PARAMETER, accountName);
+            request.setAttribute(RequestParameter.EMAIL_PARAMETER, accountEmail);
+            path = PagePath.REGISTER_SUCCESS;
         }
         return path;
     }

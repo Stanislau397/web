@@ -13,3 +13,11 @@
 18:34:53.847 [main] INFO  epam.web.util.mail.MailSender - Lancer397@gmail.com Lancer397@gmail.com
 18:34:56.593 [main] ERROR epam.web.dao.impl.UserDaoImpl - Duplicate entry 'Lancer397@gmail.com' for key 'users.email_UNIQUE'
 18:34:56.593 [main] ERROR epam.web.service.impl.UserServiceImpl - null
+16:16:54.683 [main] ERROR epam.web.util.mail.SessionCreator - resources\config\mail (Системе не удается найти указанный путь)
+16:16:56.767 [main] ERROR epam.web.util.mail.MailSender - Could not connect to SMTP host: localhost, port: 25
+16:17:26.815 [main] ERROR epam.web.util.mail.SessionCreator - \resources\config\mail (Системе не удается найти указанный путь)
+16:17:28.900 [main] ERROR epam.web.util.mail.MailSender - Could not connect to SMTP host: localhost, port: 25
+16:17:51.000 [main] ERROR epam.web.util.mail.SessionCreator - main\resources\config\mail (Системе не удается найти указанный путь)
+16:17:53.099 [main] ERROR epam.web.util.mail.MailSender - Could not connect to SMTP host: localhost, port: 25
+16:18:08.949 [main] ERROR epam.web.util.mail.SessionCreator - \main\resources\config\mail (Системе не удается найти указанный путь)
+16:18:11.046 [main] ERROR epam.web.util.mail.MailSender - Could not connect to SMTP host: localhost, port: 25
